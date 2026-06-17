@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Trabajos — SOLUTUM</title>
+  <meta name="description" content="Galería de obras realizadas por SOLUTUM en Uruguay: residencial, comercial, ampliaciones y refacciones.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nuestros Trabajos — SOLUTUM">
+  <meta property="og:description" content="Galería de obras realizadas por SOLUTUM en Uruguay: residencial, comercial, ampliaciones y refacciones.">
+  <meta property="og:image" content="/images/og-image.webp">
+  <meta property="og:locale" content="es_UY">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script type="module" src="/src/js/trabajos.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" role="banner">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo" aria-label="SOLUTUM — Inicio">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <polygon points="14,2 26,24 2,24" fill="#FF5F00"/>
+          <polygon points="14,8 22,24 6,24" fill="#162233"/>
+        </svg>
+        <span>SOLUTUM</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav__links">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/nosotros.html">Nosotros</a></li>
+          <li><a href="/trabajos.html" aria-current="page">Trabajos</a></li>
+          <li><a href="/contacto.html" class="nav__cta">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO INTERNO -->
+    <section class="hero-interno" aria-label="Nuestros trabajos">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <a href="/">Inicio</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">Trabajos</span>
+        </nav>
+        <h1 class="hero-interno__titulo">Nuestros trabajos</h1>
+        <p class="hero-interno__sub">Más de 200 obras en Uruguay — residenciales, comerciales, ampliaciones y refacciones.</p>
+      </div>
+    </section>
+
+    <!-- GALERÍA CON FILTROS -->
+    <section class="galeria" aria-labelledby="galeria-titulo">
+      <div class="container">
+        <h2 id="galeria-titulo" class="sr-only">Galería de obras</h2>
+
+        <!-- Filtros -->
+        <div class="galeria__filtros">
+          <div class="filtros" role="group" aria-label="Filtrar por categoría">
+            <button class="filtro-pill activo" data-filtro="todos" type="button">Todos</button>
+            <button class="filtro-pill" data-filtro="residencial" type="button">Residencial</button>
+            <button class="filtro-pill" data-filtro="comercial" type="button">Comercial</button>
+            <button class="filtro-pill" data-filtro="ampliaciones" type="button">Ampliaciones</button>
+            <button class="filtro-pill" data-filtro="refacciones" type="button">Refacciones</button>
+          </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="galeria__grid" id="galeria-grid">
+
+          <div class="galeria-item" data-category="residencial">
+            <a href="/images/trabajos/residencial/residencial-01.webp" class="glightbox" data-gallery="trabajos" data-title="Casa familiar — Montevideo">
+              <img src="/images/trabajos/residencial/residencial-01.webp" alt="Casa familiar construida por SOLUTUM en Montevideo" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Residencial</span><span class="galeria-item__titulo">Casa familiar</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="residencial">
+            <a href="/images/trabajos/residencial/residencial-02.webp" class="glightbox" data-gallery="trabajos" data-title="Vivienda unifamiliar">
+              <img src="/images/trabajos/residencial/residencial-02.webp" alt="Vivienda unifamiliar construida por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Residencial</span><span class="galeria-item__titulo">Vivienda unifamiliar</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="residencial">
+            <a href="/images/trabajos/residencial/residencial-03.webp" class="glightbox" data-gallery="trabajos" data-title="Obra residencial">
+              <img src="/images/trabajos/residencial/residencial-03.webp" alt="Obra residencial SOLUTUM en Montevideo" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Residencial</span><span class="galeria-item__titulo">Obra residencial</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="residencial">
+            <a href="/images/trabajos/residencial/residencial-04.webp" class="glightbox" data-gallery="trabajos" data-title="Construcción nueva">
+              <img src="/images/trabajos/residencial/residencial-04.webp" alt="Construcción residencial nueva por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Residencial</span><span class="galeria-item__titulo">Construcción nueva</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="residencial">
+            <a href="/images/trabajos/residencial/residencial-05.webp" class="glightbox" data-gallery="trabajos" data-title="Vivienda en Montevideo">
+              <img src="/images/trabajos/residencial/residencial-05.webp" alt="Vivienda construida por SOLUTUM en Montevideo" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Residencial</span><span class="galeria-item__titulo">Vivienda en Montevideo</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="comercial">
+            <a href="/images/trabajos/comercial/comercial-01.webp" class="glightbox" data-gallery="trabajos" data-title="Local comercial">
+              <img src="/images/trabajos/comercial/comercial-01.webp" alt="Local comercial construido por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Comercial</span><span class="galeria-item__titulo">Local comercial</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="comercial">
+            <a href="/images/trabajos/comercial/comercial-02.webp" class="glightbox" data-gallery="trabajos" data-title="Obra comercial">
+              <img src="/images/trabajos/comercial/comercial-02.webp" alt="Obra comercial SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Comercial</span><span class="galeria-item__titulo">Obra comercial</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="comercial">
+            <a href="/images/trabajos/comercial/comercial-03.webp" class="glightbox" data-gallery="trabajos" data-title="Local comercial">
+              <img src="/images/trabajos/comercial/comercial-03.webp" alt="Construcción comercial por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Comercial</span><span class="galeria-item__titulo">Construcción comercial</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="comercial">
+            <a href="/images/trabajos/comercial/comercial-04.webp" class="glightbox" data-gallery="trabajos" data-title="Espacio comercial">
+              <img src="/images/trabajos/comercial/comercial-04.webp" alt="Espacio comercial construido por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Comercial</span><span class="galeria-item__titulo">Espacio comercial</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="comercial">
+            <a href="/images/trabajos/comercial/comercial-05.webp" class="glightbox" data-gallery="trabajos" data-title="Obra comercial">
+              <img src="/images/trabajos/comercial/comercial-05.webp" alt="Obra comercial en Montevideo por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Comercial</span><span class="galeria-item__titulo">Obra en Montevideo</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="comercial">
+            <a href="/images/trabajos/comercial/comercial-06.webp" class="glightbox" data-gallery="trabajos" data-title="Local terminado">
+              <img src="/images/trabajos/comercial/comercial-06.webp" alt="Local comercial terminado por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Comercial</span><span class="galeria-item__titulo">Local terminado</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="comercial">
+            <a href="/images/trabajos/comercial/comercial-07.webp" class="glightbox" data-gallery="trabajos" data-title="Construcción comercial">
+              <img src="/images/trabajos/comercial/comercial-07.webp" alt="Construcción comercial SOLUTUM Uruguay" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Comercial</span><span class="galeria-item__titulo">Construcción comercial</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="ampliaciones">
+            <a href="/images/trabajos/ampliaciones/ampliaciones-01.webp" class="glightbox" data-gallery="trabajos" data-title="Ampliación de vivienda">
+              <img src="/images/trabajos/ampliaciones/ampliaciones-01.webp" alt="Ampliación de vivienda por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Ampliaciones</span><span class="galeria-item__titulo">Ampliación de vivienda</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="ampliaciones">
+            <a href="/images/trabajos/ampliaciones/ampliaciones-02.webp" class="glightbox" data-gallery="trabajos" data-title="Ampliación planta alta">
+              <img src="/images/trabajos/ampliaciones/ampliaciones-02.webp" alt="Ampliación de planta alta por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Ampliaciones</span><span class="galeria-item__titulo">Planta alta</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="ampliaciones">
+            <a href="/images/trabajos/ampliaciones/ampliaciones-03.webp" class="glightbox" data-gallery="trabajos" data-title="Ampliación lateral">
+              <img src="/images/trabajos/ampliaciones/ampliaciones-03.webp" alt="Ampliación lateral de vivienda SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Ampliaciones</span><span class="galeria-item__titulo">Ampliación lateral</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="ampliaciones">
+            <a href="/images/trabajos/ampliaciones/ampliaciones-04.webp" class="glightbox" data-gallery="trabajos" data-title="Obra de ampliación">
+              <img src="/images/trabajos/ampliaciones/ampliaciones-04.webp" alt="Obra de ampliación por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Ampliaciones</span><span class="galeria-item__titulo">Obra de ampliación</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="ampliaciones">
+            <a href="/images/trabajos/ampliaciones/ampliaciones-05.webp" class="glightbox" data-gallery="trabajos" data-title="Ampliación de espacios">
+              <img src="/images/trabajos/ampliaciones/ampliaciones-05.webp" alt="Ampliación de espacios SOLUTUM Montevideo" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Ampliaciones</span><span class="galeria-item__titulo">Ampliación de espacios</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="ampliaciones">
+            <a href="/images/trabajos/ampliaciones/ampliaciones-06.webp" class="glightbox" data-gallery="trabajos" data-title="Ampliación terminada">
+              <img src="/images/trabajos/ampliaciones/ampliaciones-06.webp" alt="Ampliación terminada por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Ampliaciones</span><span class="galeria-item__titulo">Ampliación terminada</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="ampliaciones">
+            <a href="/images/trabajos/ampliaciones/ampliaciones-07.webp" class="glightbox" data-gallery="trabajos" data-title="Ampliación residencial">
+              <img src="/images/trabajos/ampliaciones/ampliaciones-07.webp" alt="Ampliación residencial SOLUTUM Uruguay" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Ampliaciones</span><span class="galeria-item__titulo">Ampliación residencial</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="refacciones">
+            <a href="/images/trabajos/refacciones/refacciones-01.webp" class="glightbox" data-gallery="trabajos" data-title="Renovación de interiores">
+              <img src="/images/trabajos/refacciones/refacciones-01.webp" alt="Renovación de interiores por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Refacciones</span><span class="galeria-item__titulo">Renovación de interiores</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="refacciones">
+            <a href="/images/trabajos/refacciones/refacciones-02.webp" class="glightbox" data-gallery="trabajos" data-title="Refacción de interiores">
+              <img src="/images/trabajos/refacciones/refacciones-02.webp" alt="Refacción de interiores SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Refacciones</span><span class="galeria-item__titulo">Refacción de interiores</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="refacciones">
+            <a href="/images/trabajos/refacciones/refacciones-03.webp" class="glightbox" data-gallery="trabajos" data-title="Reforma de espacios">
+              <img src="/images/trabajos/refacciones/refacciones-03.webp" alt="Reforma de espacios por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Refacciones</span><span class="galeria-item__titulo">Reforma de espacios</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="refacciones">
+            <a href="/images/trabajos/refacciones/refacciones-04.webp" class="glightbox" data-gallery="trabajos" data-title="Refacción terminada">
+              <img src="/images/trabajos/refacciones/refacciones-04.webp" alt="Refacción terminada SOLUTUM Montevideo" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Refacciones</span><span class="galeria-item__titulo">Refacción terminada</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="refacciones">
+            <a href="/images/trabajos/refacciones/refacciones-05.webp" class="glightbox" data-gallery="trabajos" data-title="Renovación completa">
+              <img src="/images/trabajos/refacciones/refacciones-05.webp" alt="Renovación completa por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Refacciones</span><span class="galeria-item__titulo">Renovación completa</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="refacciones">
+            <a href="/images/trabajos/refacciones/refacciones-06.webp" class="glightbox" data-gallery="trabajos" data-title="Refacción de ambientes">
+              <img src="/images/trabajos/refacciones/refacciones-06.webp" alt="Refacción de ambientes SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Refacciones</span><span class="galeria-item__titulo">Refacción de ambientes</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="refacciones">
+            <a href="/images/trabajos/refacciones/refacciones-07.webp" class="glightbox" data-gallery="trabajos" data-title="Obra de refacción">
+              <img src="/images/trabajos/refacciones/refacciones-07.webp" alt="Obra de refacción por SOLUTUM Uruguay" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Refacciones</span><span class="galeria-item__titulo">Obra de refacción</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="refacciones">
+            <a href="/images/trabajos/refacciones/refacciones-08.webp" class="glightbox" data-gallery="trabajos" data-title="Reforma interior">
+              <img src="/images/trabajos/refacciones/refacciones-08.webp" alt="Reforma interior SOLUTUM Montevideo" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Refacciones</span><span class="galeria-item__titulo">Reforma interior</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="refacciones">
+            <a href="/images/trabajos/refacciones/refacciones-09.webp" class="glightbox" data-gallery="trabajos" data-title="Renovación de cocina">
+              <img src="/images/trabajos/refacciones/refacciones-09.webp" alt="Renovación de cocina por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Refacciones</span><span class="galeria-item__titulo">Renovación de cocina</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="refacciones">
+            <a href="/images/trabajos/refacciones/refacciones-10.webp" class="glightbox" data-gallery="trabajos" data-title="Refacción de baños">
+              <img src="/images/trabajos/refacciones/refacciones-10.webp" alt="Refacción de baños por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Refacciones</span><span class="galeria-item__titulo">Refacción de baños</span></div>
+            </a>
+          </div>
+
+          <div class="galeria-item" data-category="refacciones">
+            <a href="/images/trabajos/refacciones/refacciones-11.webp" class="glightbox" data-gallery="trabajos" data-title="Renovación exterior">
+              <img src="/images/trabajos/refacciones/refacciones-11.webp" alt="Renovación exterior por SOLUTUM" loading="lazy" width="600" height="450">
+              <div class="galeria-item__overlay"><span class="galeria-item__cat">Refacciones</span><span class="galeria-item__titulo">Renovación exterior</span></div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banda" aria-label="Contacto">
+      <div class="container cta-banda__inner">
+        <div>
+          <h2 class="cta-banda__titulo">¿Querés que hagamos algo así?</h2>
+          <p class="cta-banda__sub">Contanos tu proyecto y te damos un presupuesto sin compromiso.</p>
+        </div>
+        <a href="/contacto.html" class="btn btn--primary btn--lg">Consultar presupuesto</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Marca -->
+        <div>
+          <div class="footer__marca">
+            <img src="/images/logo/logo.webp" alt="SOLUTUM" width="100" height="auto">
+            <p class="footer__desc">Empresa de construcción en Montevideo, Uruguay. Más de 10 años construyendo con calidad y compromiso.</p>
+            <div class="footer__social">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              </a>
+              <a href="https://wa.me/598" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navegación -->
+        <div>
+          <p class="footer__titulo">Navegación</p>
+          <ul class="footer__links">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <a href="/">Inicio</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <a href="/nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <a href="/trabajos.html">Trabajos</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <a href="/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+          <p class="footer__titulo">Contacto</p>
+          <ul class="footer__links">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:info@solutum.com.uy">info@solutum.com.uy</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Montevideo, Uruguay</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Lun–Vie 9:00 a 18:00</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 SOLUTUM. Todos los derechos reservados.</span>
+        <span>Sitio web por <a href="https://www.frandoweb.com.ar" target="_blank" rel="noopener">FrandoWeb</a></span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

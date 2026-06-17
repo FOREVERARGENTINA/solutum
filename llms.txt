@@ -1,0 +1,57 @@
+SOLUTUM
+
+Empresa de construcción en Montevideo, Uruguay.
+
+# About
+
+SOLUTUM es una empresa constructora uruguaya con más de 10 años de experiencia
+en obras residenciales, comerciales, ampliaciones y refacciones en todo Uruguay.
+Fundada en 2015 en Montevideo, trabaja con materiales de primera calidad y
+equipos comprometidos con cada proyecto.
+
+# Creator
+
+Sitio web desarrollado por FrandoWeb.
+- Responsable: Hernán Frandolich
+- Especialidad: Diseño web, desarrollo full-stack, SEO y estrategia digital
+- Web: https://www.frandoweb.com.ar
+- Email: info@frandoweb.com.ar
+- WhatsApp: +54 9 11 2807-4000
+- Ubicación: Buenos Aires, Argentina
+
+# Contact
+
+- Nombre: SOLUTUM
+- Ubicación: Montevideo, Uruguay
+- Web: [por definir]
+- Email: info@solutum.com.uy
+
+# Services
+
+- Construcción residencial: casas y apartamentos nuevos
+- Construcción comercial: locales, oficinas e industrias
+- Ampliaciones: ampliación de espacios existentes
+- Refacciones: reforma y renovación de interiores y exteriores
+
+# Key Pages
+
+- / — Inicio
+- /nosotros.html — Quiénes somos
+- /trabajos.html — Galería de obras
+- /contacto.html — Contacto
+
+# Target Audience
+
+Propietarios, empresas y desarrolladores en Uruguay que buscan una constructora
+confiable, con trayectoria comprobada y equipo propio.
+
+# Unique Value Proposition
+
+- 10+ años de experiencia en el mercado uruguayo
+- Obras propias documentadas en galería real
+- Atención personalizada desde el presupuesto hasta la entrega
+
+# Tech Stack
+
+HTML semántico, CSS moderno nativo, JavaScript vanilla, GLightbox, @fontsource.
+Hosting: Cloudflare Pages.

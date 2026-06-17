@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — SOLUTUM</title>
+  <meta name="description" content="Contactá a SOLUTUM para tu próxima obra en Uruguay. Construcción residencial y comercial en Montevideo.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contacto — SOLUTUM">
+  <meta property="og:description" content="Contactá a SOLUTUM para tu próxima obra en Uruguay. Construcción residencial y comercial en Montevideo.">
+  <meta property="og:image" content="/images/og-image.webp">
+  <meta property="og:locale" content="es_UY">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/contacto.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" role="banner">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo" aria-label="SOLUTUM — Inicio">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <polygon points="14,2 26,24 2,24" fill="#FF5F00"/>
+          <polygon points="14,8 22,24 6,24" fill="#162233"/>
+        </svg>
+        <span>SOLUTUM</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav__links">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/nosotros.html">Nosotros</a></li>
+          <li><a href="/trabajos.html">Trabajos</a></li>
+          <li><a href="/contacto.html" class="nav__cta" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO INTERNO -->
+    <section class="hero-interno" aria-label="Contacto">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <a href="/">Inicio</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">Contacto</span>
+        </nav>
+        <h1 class="hero-interno__titulo">Hablemos de tu proyecto</h1>
+        <p class="hero-interno__sub">Completá el formulario y te respondemos a la brevedad.</p>
+      </div>
+    </section>
+
+    <!-- FORMULARIO + INFO -->
+    <section class="contacto-section" aria-labelledby="contacto-titulo">
+      <div class="container">
+        <div class="contacto__grid">
+
+          <!-- Formulario -->
+          <div>
+            <h2 id="contacto-titulo" class="contacto__form-titulo">Envianos tu consulta</h2>
+
+            <form id="form-contacto" class="form-stack" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="nombre">Nombre <span aria-hidden="true">*</span></label>
+                  <input class="form-control" type="text" id="nombre" name="nombre" autocomplete="name" required>
+                  <span class="form-error" id="error-nombre" hidden role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email <span aria-hidden="true">*</span></label>
+                  <input class="form-control" type="email" id="email" name="email" autocomplete="email" required>
+                  <span class="form-error" id="error-email" hidden role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="telefono">Teléfono</label>
+                  <input class="form-control" type="tel" id="telefono" name="telefono" autocomplete="tel">
+                  <span class="form-error" id="error-telefono" hidden role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="tipo">Tipo de obra <span aria-hidden="true">*</span></label>
+                  <select class="form-control" id="tipo" name="tipo" required>
+                    <option value="">Seleccioná una opción</option>
+                    <option value="nueva">Construcción nueva</option>
+                    <option value="ampliacion">Ampliación</option>
+                    <option value="refaccion">Refacción</option>
+                    <option value="consulta">Consulta general</option>
+                  </select>
+                  <span class="form-error" id="error-tipo" hidden role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required placeholder="Contanos sobre tu proyecto..."></textarea>
+                <span class="form-error" id="error-mensaje" hidden role="alert"></span>
+              </div>
+
+              <div>
+                <button type="submit" class="btn btn--primary btn--lg">Enviar consulta</button>
+              </div>
+            </form>
+
+            <!-- Confirmación (oculta hasta submit) -->
+            <div id="form-confirmacion" class="form-confirmacion" hidden>
+              <div class="confirm__icono" aria-hidden="true">✓</div>
+              <h3 class="confirm__titulo">¡Consulta recibida!</h3>
+              <p class="confirm__sub">Gracias por contactarnos. Te respondemos a la brevedad.</p>
+            </div>
+          </div>
+
+          <!-- Info de contacto -->
+          <aside>
+            <div class="contacto__info">
+              <h2 class="info__titulo">Información de contacto</h2>
+              <ul class="info__items">
+                <li class="info__item">
+                  <svg class="info__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <div>
+                    <p class="info__label">Ubicación</p>
+                    <p class="info__valor">Montevideo, Uruguay</p>
+                  </div>
+                </li>
+                <li class="info__item">
+                  <svg class="info__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                  <div>
+                    <p class="info__label">Email</p>
+                    <p class="info__valor"><a href="mailto:info@solutum.com.uy" style="color:var(--color-naranja);">info@solutum.com.uy</a></p>
+                  </div>
+                </li>
+                <li class="info__item">
+                  <svg class="info__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <div>
+                    <p class="info__label">Horario de atención</p>
+                    <p class="info__valor">Lunes a viernes, 9:00 a 18:00</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Mapa placeholder -->
+            <div class="contacto__mapa">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104626.32!2d-56.2!3d-34.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f802b6752f073%3A0x7d1c8b3e5b9c0e2a!2sMontevideo%2C%20Uruguay!5e0!3m2!1ses!2suy!4v1"
+                loading="lazy"
+                title="Ubicación de SOLUTUM en Montevideo, Uruguay"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Marca -->
+        <div>
+          <div class="footer__marca">
+            <img src="/images/logo/logo.webp" alt="SOLUTUM" width="100" height="auto">
+            <p class="footer__desc">Empresa de construcción en Montevideo, Uruguay. Más de 10 años construyendo con calidad y compromiso.</p>
+            <div class="footer__social">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              </a>
+              <a href="https://wa.me/598" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navegación -->
+        <div>
+          <p class="footer__titulo">Navegación</p>
+          <ul class="footer__links">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <a href="/">Inicio</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <a href="/nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <a href="/trabajos.html">Trabajos</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <a href="/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+          <p class="footer__titulo">Contacto</p>
+          <ul class="footer__links">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:info@solutum.com.uy">info@solutum.com.uy</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Montevideo, Uruguay</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Lun–Vie 9:00 a 18:00</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 SOLUTUM. Todos los derechos reservados.</span>
+        <span>Sitio web por <a href="https://www.frandoweb.com.ar" target="_blank" rel="noopener">FrandoWeb</a></span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

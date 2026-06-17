@@ -1,0 +1,74 @@
+:root {
+  /* Paleta Tech Premium Dark */
+  --color-fondo:        #1C2B3A;
+  --color-fondo-2:      #162233;
+  --color-fondo-deep:   #0D1B27;
+  --color-naranja:      #FF5F00;
+  --color-naranja-hover:#FF8C42;
+  --color-verde-claro:  #6BC28B;
+  --color-verde-oscuro: #028F46;
+  --color-texto:        #FFFFFF;
+  --color-texto-2:      #8BA5BC;
+  --color-borde:        #2A3D52;
+
+  /* Tipografía — Space Grotesk disponible: 300-700. Peso máx: 700 */
+  --font-titulo:  'Space Grotesk', system-ui, sans-serif;
+  --font-cuerpo:  'Inter', system-ui, sans-serif;
+
+  /* Escala de tipo (fluid) */
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+
+  /* Espaciado */
+  --sp-1:  0.25rem;
+  --sp-2:  0.5rem;
+  --sp-3:  0.75rem;
+  --sp-4:  1rem;
+  --sp-5:  1.25rem;
+  --sp-6:  1.5rem;
+  --sp-8:  2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+
+  /* Radios */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Sombras */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.5);
+  --shadow-naranja: 0 4px 24px rgba(255,95,0,0.25);
+
+  /* Contenedor */
+  --container-max: 1200px;
+  --container-pad: var(--sp-6);
+
+  /* Transiciones */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* Nav */
+  --nav-height: 72px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-pad: var(--sp-4);
+    --nav-height: 64px;
+  }
+}
