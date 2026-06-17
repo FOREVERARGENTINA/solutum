@@ -22,22 +22,22 @@
 
 Estilo aprobado: **C — Tech Premium Dark**
 
-Fondo azul-gris oscuro que evoca planos de arquitectura y construcción nocturna. Ninguna constructora local usa este estilo — es el diferenciador clave. Naranja eléctrico como acento dominante (CTA, énfasis), verde del logo como color de confianza y badges.
+Fondo gris carbón oscuro que evoca obra, hormigón y construcción nocturna. La base debe leerse neutra y sólida: el diferenciador visual viene del contraste entre gris oscuro, naranja eléctrico como acento dominante (CTA, énfasis) y verde del logo como color de confianza y badges.
 
 ### Paleta de colores
 
 | Rol | Hex |
 |-----|-----|
-| Fondo principal | `#1C2B3A` |
-| Fondo secundario | `#162233` |
-| Fondo profundo | `#0D1B27` |
+| Fondo principal | `#171717` |
+| Fondo secundario | `#202020` |
+| Fondo profundo | `#101010` |
 | Naranja eléctrico (CTA, acento) | `#FF5F00` |
 | Naranja hover/gradiente | `#FF8C42` |
 | Verde logo claro (badges, confianza) | `#6BC28B` |
 | Verde logo oscuro (íconos, detalles) | `#028F46` |
 | Texto principal | `#FFFFFF` |
-| Texto secundario | `#8BA5BC` |
-| Bordes sutiles | `#2A3D52` |
+| Texto secundario | `#B8B8B8` |
+| Bordes sutiles | `#343434` |
 
 ### Tipografía
 
@@ -60,17 +60,17 @@ Hero dividido: texto izquierda + foto de obra derecha con badge flotante. Servic
 |---------|-------------|
 | **Nav** | Logo izq · links centro · botón "Contacto" naranja der. Sticky con `backdrop-filter: blur(12px)` + clase `.scrolled` al hacer scroll |
 | **Hero split** | 50/50: texto izq con título grande (Space Grotesk 800) + slogan + 2 CTAs ("Ver trabajos" naranja, "Nosotros" outline) · Foto de obra derecha con badge flotante naranja. Línea vertical naranja como separador visual |
-| **Stats bar** | 3 números en naranja: `10+ años` · `200+ obras` · `Montevideo`. Fondo `#162233`, separadores verticales sutiles |
+| **Stats bar** | 3 números en naranja: `10+ años` · `200+ obras` · `Montevideo`. Fondo `#202020`, separadores verticales sutiles |
 | **Servicios** | Grid 2x2 en mobile, carrusel en desktop. 4 cards: Construcción Residencial · Comercial · Ampliaciones · Refacciones. Borde superior `#FF5F00`, ícono en `#028F46`, hover con fondo naranja suave |
 | **Preview trabajos** | Grid 3 columnas, 6 fotos highlight. Hover overlay con categoría en `#6BC28B` y título breve. Botón "Ver todos los trabajos" |
-| **CTA contacto** | Banda con fondo `#162233`, borde superior sutil naranja, texto + botón naranja |
+| **CTA contacto** | Banda con fondo `#202020`, borde superior sutil naranja, texto + botón naranja |
 | **Footer** | Logo · links internos · "Montevideo, Uruguay" · email (a completar) · crédito FrandoWeb |
 
 ### 3.2 Nosotros (`nosotros.html`)
 
 | Sección | Descripción |
 |---------|-------------|
-| **Hero página** | Fondo `#0D1B27`, título "Quiénes somos" + breadcrumb Home > Nosotros |
+| **Hero página** | Fondo `#101010`, título "Quiénes somos" + breadcrumb Home > Nosotros |
 | **Historia** | Split: texto izq + foto der. Línea naranja izq como accent |
 | **Valores** | 3 columnas: Calidad · Compromiso · Puntualidad. Ícono SVG en verde, descripción breve |
 | **CTA** | Mismo bloque que inicio |
@@ -90,7 +90,7 @@ Hero dividido: texto izquierda + foto de obra derecha con badge flotante. Servic
 | **Hero página** | Igual que Nosotros |
 | **Filtros** | Pills horizontales: Todos · Residencial · Comercial · Ampliaciones · Refacciones. Activo: fondo `#FF5F00`, texto blanco |
 | **Grid filtrable** | 3 col desktop / 2 col tablet / 1 col mobile. Filtrado con JS vanilla puro (`data-category` + `display:none` + transición opacity). Sin librerías de filtrado |
-| **Cards** | Foto con aspect-ratio 4/3. Hover: overlay `rgba(13,27,39,0.85)` + categoría en `#6BC28B` + título blanco |
+| **Cards** | Foto con aspect-ratio 4/3. Hover: overlay `rgba(16,16,16,0.84)` + categoría en `#6BC28B` + título blanco |
 | **Lightbox** | GLightbox — única dependencia JS externa permitida |
 
 **Categorías de fotos:**

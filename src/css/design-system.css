@@ -1,15 +1,15 @@
 :root {
-  /* Paleta Tech Premium Dark */
-  --color-fondo:        #1C2B3A;
-  --color-fondo-2:      #162233;
-  --color-fondo-deep:   #0D1B27;
+  /* Paleta Tech Premium Dark: gris carbón + acentos de marca */
+  --color-fondo:        #171717;
+  --color-fondo-2:      #202020;
+  --color-fondo-deep:   #101010;
   --color-naranja:      #FF5F00;
   --color-naranja-hover:#FF8C42;
   --color-verde-claro:  #6BC28B;
   --color-verde-oscuro: #028F46;
   --color-texto:        #FFFFFF;
-  --color-texto-2:      #8BA5BC;
-  --color-borde:        #2A3D52;
+  --color-texto-2:      #B8B8B8;
+  --color-borde:        #343434;
 
   /* Tipografía — Space Grotesk disponible: 300-700. Peso máx: 700 */
   --font-titulo:  'Space Grotesk', system-ui, sans-serif;

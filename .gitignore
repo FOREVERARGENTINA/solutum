@@ -3,5 +3,6 @@ dist/
 .superpowers/
 .playwright-mcp/
 *.log
+.vite-dev.err
 .DS_Store
 Thumbs.db

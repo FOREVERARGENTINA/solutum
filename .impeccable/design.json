@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-17T00:00:00-03:00",
+  "title": "Design System: SOLUTUM",
+  "extensions": {
+    "colorMeta": {
+      "coal-bg": {
+        "role": "neutral",
+        "displayName": "Gris Carbón",
+        "canonical": "#171717",
+        "tonalRamp": ["#080808", "#101010", "#171717", "#202020", "#343434", "#5A5A5A", "#B8B8B8", "#FFFFFF"]
+      },
+      "coal-surface": {
+        "role": "neutral",
+        "displayName": "Gris Superficie",
+        "canonical": "#202020",
+        "tonalRamp": ["#080808", "#101010", "#171717", "#202020", "#343434", "#5A5A5A", "#B8B8B8", "#FFFFFF"]
+      },
+      "construction-orange": {
+        "role": "primary",
+        "displayName": "Naranja Obra",
+        "canonical": "#FF5F00",
+        "tonalRamp": ["#331300", "#662600", "#993900", "#CC4C00", "#FF5F00", "#FF8C42", "#FFC29B", "#FFF1E8"]
+      },
+      "trust-green": {
+        "role": "secondary",
+        "displayName": "Verde Confianza",
+        "canonical": "#6BC28B",
+        "tonalRamp": ["#07140C", "#0B2D17", "#028F46", "#37A96B", "#6BC28B", "#9FDCB5", "#D5F3DE", "#F2FBF5"]
+      },
+      "steel-border": {
+        "role": "neutral",
+        "displayName": "Borde Acero",
+        "canonical": "#343434",
+        "tonalRamp": ["#080808", "#101010", "#171717", "#202020", "#343434", "#5A5A5A", "#B8B8B8", "#FFFFFF"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display Industrial",
+        "purpose": "Hero headlines and strong page titles."
+      },
+      "body": {
+        "displayName": "Body Clear",
+        "purpose": "Readable commercial copy and form content."
+      },
+      "label": {
+        "displayName": "Short Label",
+        "purpose": "Badges, categories, filters and compact metadata."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-sm",
+        "value": "0 1px 3px rgba(0,0,0,0.3)",
+        "purpose": "Low-detail depth."
+      },
+      {
+        "name": "shadow-md",
+        "value": "0 4px 16px rgba(0,0,0,0.4)",
+        "purpose": "Moderate component elevation."
+      },
+      {
+        "name": "shadow-lg",
+        "value": "0 8px 32px rgba(0,0,0,0.5)",
+        "purpose": "Hover cards and floating badges."
+      },
+      {
+        "name": "shadow-naranja",
+        "value": "0 4px 24px rgba(255,95,0,0.25)",
+        "purpose": "Primary CTA hover emphasis."
+      }
+    ],
+    "motion": [
+      {
+        "name": "transition-fast",
+        "value": "150ms ease",
+        "purpose": "Hover and focus feedback."
+      },
+      {
+        "name": "transition-base",
+        "value": "250ms ease",
+        "purpose": "Navigation blur, card states and overlays."
+      },
+      {
+        "name": "transition-slow",
+        "value": "400ms ease",
+        "purpose": "Image scale and larger visual shifts."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "768px"
+      },
+      {
+        "name": "small",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action button for contact and work-gallery CTAs.",
+      "html": "<button class=\"ds-btn-primary\">Enviar consulta</button>",
+      "css": ".ds-btn-primary { background: #FF5F00; color: #fff; border: 2px solid transparent; border-radius: 4px; padding: 0.75rem 1.5rem; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 700; font-size: 0.875rem; letter-spacing: 0.05em; cursor: pointer; transition: background-color 150ms ease, box-shadow 150ms ease; } .ds-btn-primary:hover { background: #FF8C42; box-shadow: 0 4px 24px rgba(255,95,0,0.25); } .ds-btn-primary:focus-visible { outline: 2px solid #FF5F00; outline-offset: 3px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action button for lower-emphasis navigation.",
+      "html": "<button class=\"ds-btn-outline\">Ver trabajos</button>",
+      "css": ".ds-btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.25); border-radius: 4px; padding: 0.75rem 1.5rem; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 700; font-size: 0.875rem; letter-spacing: 0.05em; cursor: pointer; transition: border-color 150ms ease, color 150ms ease; } .ds-btn-outline:hover { border-color: #FF5F00; color: #FF5F00; } .ds-btn-outline:focus-visible { outline: 2px solid #FF5F00; outline-offset: 3px; }"
+    },
+    {
+      "name": "Filter Pill Active",
+      "kind": "chip",
+      "refersTo": "filter-pill-active",
+      "description": "Selected state for gallery category filters.",
+      "html": "<button class=\"ds-filter-pill ds-filter-pill-active\">Residencial</button>",
+      "css": ".ds-filter-pill { padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; border: 1px solid #343434; color: #B8B8B8; background: transparent; cursor: pointer; } .ds-filter-pill-active { background: #FF5F00; border-color: #FF5F00; color: #fff; } .ds-filter-pill:focus-visible { outline: 2px solid #FF5F00; outline-offset: 3px; }"
+    },
+    {
+      "name": "Work Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Gallery and service card with neutral surface and restrained hover depth.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-img\"></div><div class=\"ds-card-body\"><p class=\"ds-card-cat\">Residencial</p><h3>Obra terminada</h3></div></article>",
+      "css": ".ds-card { background: #202020; border: 1px solid #343434; border-radius: 8px; overflow: hidden; color: #fff; transition: transform 250ms ease, box-shadow 250ms ease; } .ds-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.5); } .ds-card-img { aspect-ratio: 4 / 3; background: #101010; } .ds-card-body { padding: 1.25rem; } .ds-card-cat { color: #6BC28B; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 0.5rem; } .ds-card h3 { font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 1.125rem; margin: 0; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Contact form field on dark surfaces.",
+      "html": "<label class=\"ds-field\"><span>Nombre</span><input class=\"ds-input\" placeholder=\"Tu nombre\" /></label>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 0.25rem; color: #B8B8B8; font-size: 0.875rem; font-weight: 600; } .ds-input { background: #101010; border: 1px solid #343434; border-radius: 4px; padding: 0.75rem 1rem; font-family: Inter, system-ui, sans-serif; font-size: 1rem; color: #fff; transition: border-color 150ms ease; } .ds-input::placeholder { color: #B8B8B8; opacity: 0.65; } .ds-input:focus { outline: none; border-color: #FF5F00; } .ds-input:focus-visible { outline: 2px solid #FF5F00; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Carbón de Obra",
+    "overview": "SOLUTUM usa una base gris carbón para comunicar estructura, obra y peso material. El sistema no debe leerse azul ni tecnológico por defecto. La personalidad visual nace del contraste entre superficies grises oscuras, fotografías reales de obra, naranja eléctrico para acción y verde para confianza.",
+    "keyCharacteristics": [
+      "Superficies gris carbón, neutras y sólidas.",
+      "Acentos naranjas escasos pero decididos para CTAs, líneas y números.",
+      "Verde usado como señal de confianza, categoría o validación, nunca como color dominante.",
+      "Fotos reales de obra como evidencia central.",
+      "Layouts limpios, con aire, bordes contenidos y radios discretos."
+    ],
+    "rules": [
+      {
+        "name": "The No Blue Base Rule",
+        "body": "Ningún fondo, overlay, borde ni texto secundario debe volver a la familia azulada anterior. Si una superficie parece azul petróleo, está mal.",
+        "section": "colors"
+      },
+      {
+        "name": "The Accent Rarity Rule",
+        "body": "Naranja y verde ganan fuerza porque aparecen poco. No cubrir secciones enteras con acentos.",
+        "section": "colors"
+      },
+      {
+        "name": "The Construction Clarity Rule",
+        "body": "El texto debe ser legible antes que vistoso. No usar tracking negativo ni tamaños hero dentro de cards o formularios.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat At Rest Rule",
+        "body": "Cards, formularios y bandas quedan planas en reposo. La elevación aparece como respuesta a interacción o énfasis.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do usar #171717, #202020 y #101010 como base gris carbón.",
+      "Do reservar #FF5F00 para CTAs, números, estados activos y acentos de alta intención.",
+      "Do usar fotografías reales de obra como evidencia visual principal.",
+      "Do mantener radios de cards en 8px o menos salvo pills.",
+      "Do verificar contraste después de cualquier cambio de color.",
+      "Do respetar prefers-reduced-motion para carrusel, reveals y badges."
+    ],
+    "donts": [
+      "Don't usar paletas azuladas como color secundario o base visual.",
+      "Don't usar look de startup tecnológica con fondos azul petróleo, violeta o degradados SaaS.",
+      "Don't usar beige, crema, arena o estética inmobiliaria genérica.",
+      "Don't usar glassmorphism decorativo, brillos excesivos o tarjetas flotantes blandas.",
+      "Don't reemplazar obra real por stock genérico, iconos de casco o ilustraciones decorativas.",
+      "Don't redondear cards, inputs o secciones por encima de 16px.",
+      "Don't introducir fuentes mono, serif editorial o estilos ajenos a la marca sin una razón explícita."
+    ]
+  }
+}
