@@ -16,7 +16,7 @@
 - Footer pasó de layout horizontal (logo + texto lado a lado) a columna vertical en la sección de marca
 
 ### Deploy
-- URL producción: https://soltum.pages.dev
+- URL producción: https://solutum.pages.dev
 - Plataforma: Cloudflare Pages vía Wrangler CLI
 
 ---
@@ -34,7 +34,7 @@
 - 4 fotos hero WebP en `public/images/hero/`
 - SEO: robots.txt, sitemap.xml, llms.txt, favicons (favicomatic), meta OG
 - Seguridad: `_headers` con HSTS, CSP, X-Frame-Options, Permissions-Policy
-- Primer deploy en Cloudflare Pages: https://soltum.pages.dev
+- Primer deploy en Cloudflare Pages: https://solutum.pages.dev
 
 ---
 
@@ -43,6 +43,12 @@
 - [ ] Email real de SOLUTUM (usa info@solutum.com.uy de placeholder)
 - [ ] Teléfono / WhatsApp real
 - [ ] Dirección exacta para el mapa de Google Maps
-- [ ] OG image real (`/images/og-image.webp`)
 - [ ] Dominio personalizado en Cloudflare Pages
+- [ ] **Al tener dominio: actualizar `og:image` en las 4 páginas** — actualmente apunta a `https://solutum.pages.dev/images/og-image.png`, debe cambiarse a la URL definitiva. Facebook requiere URL absoluta.
 - [ ] Conectar formulario a backend (email o CRM)
+
+## 2026-06-17 — OG image
+
+### Añadido
+- OG image global (`public/images/og-image.png`) — imagen branded 1200×628 con logo, claim y foto de obra
+- `og:image` con URL absoluta en las 4 páginas (`https://solutum.pages.dev/images/og-image.png`) — Facebook requiere URL absoluta, no relativa

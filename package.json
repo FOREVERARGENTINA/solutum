@@ -10,7 +10,7 @@
     "check:encoding": "node scripts/check-encoding.js",
     "fix:encoding": "node scripts/fix-encoding.js",
     "fix:encoding:apply": "node scripts/fix-encoding.js --apply",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name=soltum"
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=solutum"
   },
   "dependencies": {
     "@fontsource/inter": "^5.0.0",
