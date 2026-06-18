@@ -8,6 +8,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         nosotros: resolve(__dirname, 'nosotros.html'),
         trabajos: resolve(__dirname, 'trabajos.html'),
+        servicios: resolve(__dirname, 'servicios.html'),
         contacto: resolve(__dirname, 'contacto.html'),
       },
       // glightbox solo en el bundle de trabajos

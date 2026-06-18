@@ -26,11 +26,11 @@
     gap: var(--sp-3);
     padding: var(--sp-2) var(--sp-4);
     border-radius: var(--radius-full);
-    background-color: rgba(255,95,0,0.12);
-    border: 1px solid rgba(255,95,0,0.25);
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid var(--color-borde);
     font-size: var(--text-xs);
     font-weight: 600;
-    color: var(--color-naranja);
+    color: var(--color-texto-2);
     letter-spacing: 0.08em;
     text-transform: uppercase;
     width: fit-content;
