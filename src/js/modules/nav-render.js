@@ -1,7 +1,8 @@
 const NAV_LINKS = [
-  { href: '/',             label: 'Inicio' },
+  { href: '/',              label: 'Inicio' },
   { href: '/nosotros.html', label: 'Nosotros' },
   { href: '/servicios.html', label: 'Servicios' },
+  { href: '/trabajos.html', label: 'Trabajos' },
   { href: '/contacto.html', label: 'Contacto', cta: true },
 ]
 

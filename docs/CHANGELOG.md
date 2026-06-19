@@ -1,5 +1,33 @@
 # CHANGELOG — SOLUTUM
 
+## [2026-06-19] — Hero rediseñado + arquitectura JS unificada
+
+### Añadido
+- **Hero — nuevas fotos**: 5 imágenes WebP (900×900) reemplazando las anteriores, copiadas desde `datos/hero/` a `public/images/hero/`.
+- **Hero — carrusel cinemático**: slide saliente viaja como clon `position:fixed` hacia la izquierda con transparencia (0.08 opacity), cruzando sobre el texto. El clon replica el gradiente izquierda para evitar salto visual al inicio de la transición.
+- **Hero — Ken Burns**: zoom suave `scale(1.0 → 1.03)` en cada foto activa.
+- **Hero — barra de progreso**: 5 barras centradas en la base de la imagen, animadas con duración sincronizada al intervalo del carrusel (5s). Cliqueables para navegar.
+- **Hero — frase rotativa**: línea debajo del h1 que cicla entre los servicios (Sanitaria, Electricidad, Albañilería, Pintura, Construcción) con transición fade up/down, sincronizada con el cambio de slide.
+- **Hero — entrada escalonada**: label → título → rotativa → sub → botones con `animation-delay` escalonado y `animation-fill-mode: both`.
+- **Footer como componente**: `src/js/modules/footer-render.js` — igual que el nav, genera el HTML del footer dinámicamente. Fuente única para todas las páginas.
+- **Nav**: agregado enlace "Trabajos" en desktop, mobile drawer y footer de navegación.
+
+### Cambiado
+- **Arquitectura JS unificada**: eliminados entry points separados (`trabajos.js`, `contacto.js`). Ahora todos los HTML usan un único `main.js` con carga dinámica por página (`await import()` condicional por `pathname`).
+- **Flotantes en iOS Safari**: reemplazado `requestIdleCallback` sin fallback por detección de soporte + `setTimeout(500ms)`. Los botones scroll/WP ahora aparecen en todos los dispositivos.
+- **Hero — transición**: de fade de opacidad simple a desplazamiento horizontal con clon fixed. Duración 1600ms, easing `cubic-bezier(0.4,0,0.6,1)`.
+- **Hero — intervalo**: aumentado a 5000ms para dar más tiempo de lectura.
+- **Texto sub en mobile**: reducido de `text-lg` a `text-base` (1rem) para mejor legibilidad en pantallas pequeñas.
+- **Card ANDA en mobile**: padding reducido de `sp-10` a `sp-6` para aprovechar mejor el ancho disponible.
+
+### Eliminado
+- Badges del hero (`Proveedor ANDA`, `28+ años`, `365 días`) — removidos del HTML y CSS.
+- Card flotante "28 años / ★★★★★" sobre las fotos del hero — removida del HTML y CSS.
+- Badge flotante "365 días de cobertura" original — reemplazado y luego eliminado.
+- Entry points `trabajos.js` y `contacto.js` como scripts activos (archivos mantenidos pero ya no referenciados en ningún HTML).
+
+---
+
 ## [Unreleased] — en desarrollo
 
 ### Añadido
