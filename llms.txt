@@ -1,89 +1,46 @@
-SOLUTUM
+# SOLUTUM
 
-Empresa uruguaya de mantenimiento programado del hogar y construcción en Montevideo.
+> Empresa uruguaya de mantenimiento programado del hogar y construccion en Montevideo.
 
-# About
+SOLUTUM S.A. es una empresa de Montevideo fundada en 1997. Es proveedor oficial de ANDA para servicios de mantenimiento programado del hogar en Montevideo y area metropolitana, y tambien ejecuta obras de construccion, ampliaciones y refacciones residenciales y comerciales.
 
-SOLUTUM S.A. es una empresa de Montevideo fundada en 1997. Es proveedor oficial
-de ANDA para servicios de mantenimiento programado del hogar en Montevideo y área
-metropolitana, y también ejecuta obras de construcción, ampliaciones y refacciones
-residenciales y comerciales.
+El sitio presenta la trayectoria de la empresa, sus servicios, trabajos realizados y canales de contacto para propietarios, socios de ANDA, empresas, arquitectos, administradores y desarrolladores que buscan mantenimiento del hogar o una constructora confiable en Uruguay.
 
-El sitio presenta la trayectoria de la empresa, sus servicios, trabajos realizados
-y canales de contacto para propietarios, empresas, arquitectos, administradores y
-desarrolladores que buscan una constructora confiable en Uruguay.
+Servicios principales:
+- Mantenimiento sanitario: limpieza de graseras, cambio de colillas, ajustes de canillas y desague de azotea.
+- Mantenimiento electrico: cambio de enchufes, llaves termicas y relevamiento de fugas electricas.
+- Albanileria: cambio de ceramicas, amurado de camaras y reparacion de mesadas.
+- Pintura: tratamiento de hongos, desinfeccion y pintura de habitacion completa.
+- Construccion residencial y comercial, ampliaciones y refacciones.
 
-# Contact
+Informacion comercial:
+- Los precios y presupuestos no estan publicados.
+- Las consultas se realizan por WhatsApp, email o formulario de contacto.
+- Horario de atencion: lunes a viernes de 9 a 18 hs.
 
-- Nombre: SOLUTUM S.A.
-- Ubicación: Montevideo, Uruguay
-- Web: https://solutum.com.uy/
-- Email: info@solutum.com.uy
-- WhatsApp: +598 96 793 203
-- WhatsApp alternativo: +598 99 629 765
-- Horario de atención: lunes a viernes de 9 a 18 hs
+## Key Pages
 
-# Services
+- [Inicio](https://solutum.com.uy/): Presentacion de SOLUTUM, respaldo ANDA, servicios principales y trayectoria.
+- [Quienes somos](https://solutum.com.uy/nosotros.html): Historia, valores y contexto institucional de la empresa.
+- [Servicios](https://solutum.com.uy/servicios.html): Mantenimiento programado, construccion, ampliaciones, refacciones y galeria vinculada.
+- [Trabajos realizados](https://solutum.com.uy/trabajos.html): Galeria de obras por categoria.
+- [Contacto](https://solutum.com.uy/contacto.html): Formulario, email, WhatsApp, ubicacion y horario.
+- [Sitemap XML](https://solutum.com.uy/sitemap.xml): Lista de paginas indexables del sitio.
 
-- Mantenimiento sanitario: limpieza de graseras, cambio de colillas, ajustes de canillas y desagüe de azotea.
-- Mantenimiento eléctrico: cambio de enchufes, llaves térmicas y relevamiento de fugas eléctricas.
-- Albañilería: cambio de cerámicas, amurado de cámaras y reparación de mesadas.
-- Pintura: tratamiento de hongos, desinfección y pintura de habitación completa.
-- Construcción residencial: obras nuevas, viviendas y trabajos para hogares.
-- Construcción comercial: locales, oficinas y espacios comerciales.
-- Ampliaciones: ampliación de espacios existentes.
-- Refacciones: reforma y renovación de interiores y exteriores.
+## Contact
 
-# Key Pages
+- [Sitio web](https://solutum.com.uy/): Sitio oficial de SOLUTUM.
+- [Email](mailto:info@solutum.com.uy): Contacto comercial.
+- [WhatsApp principal](https://wa.me/59896793203): Consultas por WhatsApp.
+- [WhatsApp alternativo](https://wa.me/59899629765): Segundo canal de WhatsApp.
 
-- https://solutum.com.uy/ — Inicio
-- https://solutum.com.uy/nosotros.html — Quiénes somos
-- https://solutum.com.uy/servicios.html — Servicios de mantenimiento y construcción
-- https://solutum.com.uy/trabajos.html — Trabajos realizados
-- https://solutum.com.uy/contacto.html — Contacto
-- https://solutum.com.uy/sitemap.xml — Sitemap
+## Creator
 
-# Target Audience
+- [FrandoWeb](https://www.frandoweb.com.ar): Diseno web, desarrollo full-stack, SEO y estrategia digital.
+- [Email de FrandoWeb](mailto:info@frandoweb.com.ar): Contacto del responsable del sitio.
+- [WhatsApp de FrandoWeb](https://wa.me/5491128074000): Contacto por WhatsApp del responsable del sitio.
 
-Propietarios, socios de ANDA, empresas, arquitectos, administradores y
-desarrolladores en Montevideo y Uruguay que necesitan mantenimiento del hogar,
-construcción, ampliaciones o refacciones con respaldo técnico y trayectoria.
+## Optional
 
-# Unique Value Proposition
-
-- Proveedor oficial de ANDA para mantenimiento programado del hogar.
-- Más de 28 años de trayectoria desde 1997 en Montevideo.
-- Servicios de mantenimiento y construcción con personal propio, criterio técnico y trabajos reales documentados.
-
-# SEO Keywords
-
-- mantenimiento del hogar Montevideo
-- proveedor oficial ANDA
-- sanitaria Montevideo
-- electricidad Montevideo
-- albañilería Montevideo
-- pintura Montevideo
-- empresa constructora Montevideo
-- construcción Uruguay
-- ampliaciones Montevideo
-- refacciones Montevideo
-
-# Pricing
-
-Los precios y presupuestos no están publicados. Las consultas se realizan por
-WhatsApp, email o formulario de contacto.
-
-# Tech Stack
-
-Sitio multipágina con Vite, HTML semántico, CSS moderno, JavaScript vanilla,
-GLightbox y fuentes locales vía @fontsource. Hosting previsto: Cloudflare Pages.
-
-# Creator
-
-Sitio web desarrollado por FrandoWeb.
-- Responsable: Hernán Frandolich
-- Especialidad: diseño web, desarrollo full-stack, SEO y estrategia digital
-- Web: https://www.frandoweb.com.ar
-- Email: info@frandoweb.com.ar
-- WhatsApp: +54 9 11 2807-4000
-- Ubicación: Buenos Aires, Argentina
+- [Robots.txt](https://solutum.com.uy/robots.txt): Reglas de rastreo del sitio.
+- [Open Graph image](https://solutum.com.uy/images/og-image.png): Imagen social principal del sitio.

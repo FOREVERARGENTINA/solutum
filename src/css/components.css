@@ -97,7 +97,7 @@
   }
 
   .nav__links a.nav__cta {
-    background-color: var(--color-naranja);
+    background-color: #C94800;
     color: var(--color-texto);
     padding: var(--sp-2) var(--sp-5);
     border-radius: var(--radius-sm);
@@ -110,7 +110,7 @@
                 font-size 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-      background-color: var(--color-naranja-hover);
+      background-color: #A83C00;
       box-shadow: var(--shadow-naranja);
     }
   }
@@ -224,11 +224,11 @@
 }
 
 .btn--primary {
-  background-color: var(--color-naranja);
+  background-color: #C94800;
   color: #fff;
 
   &:hover {
-    background-color: var(--color-naranja-hover);
+    background-color: #A83C00;
     box-shadow: var(--shadow-naranja);
   }
 }
@@ -271,7 +271,7 @@
 .badge--naranja {
   background-color: rgba(255, 95, 0, 0.15);
   border: 1px solid rgba(255, 95, 0, 0.3);
-  color: var(--color-naranja);
+  color: #FF8040;
 }
 
 /* CARDS ------------------------------------------------------ */

@@ -32,10 +32,7 @@ export function renderNav() {
   header.innerHTML = `
     <div class="container nav__inner">
       <a href="/" class="nav__logo" aria-label="SOLUTUM — Inicio">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-          <polygon points="14,2 26,24 2,24" fill="#FF5F00"/>
-          <polygon points="14,8 22,24 6,24" fill="#171717"/>
-        </svg>
+        <img src="/images/logo/logo3.webp" alt="SOLUTUM" width="48" height="46">
         <span>SOLUTUM</span>
       </a>
       <nav aria-label="Navegación principal">

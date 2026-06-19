@@ -112,7 +112,7 @@
     position: absolute;
     bottom: var(--sp-8);
     left: -var(--sp-6);
-    background-color: var(--color-naranja);
+    background-color: #C94800;
     color: #fff;
     padding: var(--sp-3) var(--sp-5);
     border-radius: var(--radius-md);
@@ -132,7 +132,7 @@
 
     .badge__txt {
       font-size: var(--text-xs);
-      opacity: 0.85;
+      color: rgba(255,255,255,0.95);
     }
   }
 

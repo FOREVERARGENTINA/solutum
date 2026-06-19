@@ -2,18 +2,18 @@ export function initFooterReveal() {
   const isMobile = window.matchMedia('(max-width: 768px)').matches
   if (isMobile) return
 
-  const main   = document.querySelector('main')
   const footer = document.querySelector('.footer')
-  if (!main || !footer) return
+  if (!document.querySelector('main') || !footer) return
 
-  document.documentElement.classList.add('footer-reveal')
-
-  function sync() {
-    document.documentElement.style.setProperty('--footer-reveal-space', `${footer.getBoundingClientRect().height}px`)
+  function applyFooterHeight(height) {
+    document.documentElement.style.setProperty('--footer-reveal-space', `${Math.ceil(height)}px`)
+    document.documentElement.classList.add('footer-reveal')
   }
 
-  window.addEventListener('load', sync)
-  window.addEventListener('resize', sync)
-  if ('ResizeObserver' in window) new ResizeObserver(sync).observe(footer)
-  sync()
+  if ('ResizeObserver' in window) {
+    new ResizeObserver(([entry]) => {
+      const borderSize = entry.borderBoxSize?.[0]?.blockSize
+      applyFooterHeight(borderSize || entry.contentRect.height)
+    }).observe(footer)
+  }
 }
