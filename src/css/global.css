@@ -71,10 +71,10 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
 }
 
-/* Scroll-driven animation base */
+/* Scroll-driven reveal — mejora progresiva sobre contenido siempre visible */
 @media (prefers-reduced-motion: no-preference) {
   .reveal {
-    animation: reveal-up linear both;
+    animation: reveal-up linear forwards;
     animation-timeline: view();
     animation-range: entry 0% entry 30%;
   }
@@ -82,12 +82,21 @@ h1, h2, h3, h4, h5, h6 {
   @keyframes reveal-up {
     from {
       opacity: 0;
-      transform: translateY(32px);
+      transform: translateY(24px);
     }
     to {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+
+/* Fallback: si animation-timeline no está soportado o en SSR/headless,
+   el contenido es visible por defecto */
+@supports not (animation-timeline: view()) {
+  .reveal {
+    opacity: 1;
+    transform: none;
   }
 }
 
@@ -107,6 +116,36 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   span { color: var(--color-verde-claro); }
+}
+
+/* Marca ANDA en texto corrido */
+.marca-anda {
+  font-family: var(--font-anda);
+  font-weight: 600;
+  color: var(--color-anda);
+  text-transform: lowercase;
+  font-style: normal;
+}
+
+/* Layout helpers — secciones de 2 columnas */
+.seccion-2col {
+  padding-block: var(--sp-20);
+  background: var(--color-fondo-2);
+  border-top: 1px solid var(--color-borde);
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-12);
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .grid-2col {
+    grid-template-columns: 1fr;
+    gap: var(--sp-8);
+  }
 }
 
 /* Hero interno (páginas secundarias) */

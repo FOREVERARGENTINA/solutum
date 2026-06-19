@@ -53,8 +53,20 @@
 
   .hero__acciones {
     display: flex;
-    gap: var(--sp-4);
-    flex-wrap: wrap;
+    gap: var(--sp-3);
+    flex-wrap: nowrap;
+
+    .btn--lg {
+      padding: var(--sp-3) var(--sp-5);
+      font-size: var(--text-sm);
+      flex: 1;
+      justify-content: center;
+      white-space: nowrap;
+    }
+  }
+
+  .hero__badges {
+    display: none;
   }
 
   .hero__imagen {
@@ -136,7 +148,7 @@
     min-height: auto;
 
     .hero__contenido {
-      padding: calc(var(--nav-height) + var(--sp-10)) var(--container-pad) var(--sp-10);
+      padding: var(--sp-8) var(--container-pad) var(--sp-8);
     }
 
     .hero__imagen {

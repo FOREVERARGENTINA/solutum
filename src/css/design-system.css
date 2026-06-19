@@ -57,6 +57,10 @@
   --container-max: 1200px;
   --container-pad: var(--sp-6);
 
+  /* Fuente ANDA */
+  --font-anda: 'Poppins', system-ui, sans-serif;
+  --color-anda: #3865E5;
+
   /* Transiciones */
   --transition-fast:   150ms ease;
   --transition-base:   250ms ease;

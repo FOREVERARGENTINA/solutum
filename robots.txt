@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Allow: /llms.txt
 
-Sitemap: https://www.solutum.com.uy/sitemap.xml
+Sitemap: https://solutum.com.uy/sitemap.xml

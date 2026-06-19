@@ -2,6 +2,21 @@
 
 ## [Unreleased] — en desarrollo
 
+### Añadido
+- Botones flotantes globales: scroll al inicio a la izquierda y WhatsApp a la derecha, con tamaño simétrico y estilos de marca.
+- Navegación renderizada desde `src/js/modules/nav-render.js`, con drawer mobile y estado activo por página.
+- Hoja global `src/css/app.css` enlazada desde el HTML para evitar el primer render sin estilos cuando el CSS se cargaba solo desde JS.
+
+### Cambiado
+- SEO actualizado en páginas principales: títulos, descripciones, canonical, Open Graph, Twitter Card y JSON-LD.
+- `llms.txt` y `public/llms.txt` sincronizados con datos actuales de SOLUTUM: dominio definitivo, proveedor ANDA, servicios, contacto y página de servicios.
+- `robots.txt`, `public/robots.txt`, `sitemap.xml` y `public/sitemap.xml` alineados al dominio canónico `https://solutum.com.uy/`; se agregó `servicios.html` al sitemap.
+- Los imports de CSS salieron de los bundles JS principales para que el CSS base llegue por `<link rel="stylesheet">` en el `<head>`.
+
+### Corregido
+- Se eliminaron datos viejos de `llms.txt` como fundación 2015, "10+ años" y web "[por definir]".
+- Se restauró `servicios.html` con el bundle `trabajos.js` para conservar filtros de galería y GLightbox.
+
 ---
 
 ## 2026-06-17 — Footer moderno + deploy CLI

@@ -3,31 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SOLUTUM — Centro de Mantenimiento Programado | Montevideo</title>
-  <meta name="description" content="SOLUTUM es proveedor oficial de ANDA en servicios de mantenimiento programado del hogar en Montevideo y área metropolitana. Sanitaria, electricidad, albañilería y pintura.">
+  <style>html,body{background:#171717}</style>
+  <link rel="stylesheet" href="/src/css/app.css">
 
-  <!-- Open Graph -->
+  <title>SOLUTUM — Mantenimiento del Hogar y Construcción en Montevideo</title>
+  <meta name="description" content="Proveedor oficial de ANDA en Montevideo. Mantenimiento programado del hogar: sanitaria, electricidad, albañilería y pintura. También construcción, ampliaciones y refacciones. Atención los 365 días.">
+  <link rel="canonical" href="https://solutum.com.uy/">
+
   <meta property="og:type" content="website">
-  <meta property="og:title" content="SOLUTUM — Centro de Mantenimiento Programado">
-  <meta property="og:description" content="Proveedor oficial de ANDA. Servicios de mantenimiento del hogar en Montevideo: sanitaria, electricidad, albañilería y pintura. Respuesta los 365 días.">
+  <meta property="og:url" content="https://solutum.com.uy/">
+  <meta property="og:title" content="SOLUTUM — Mantenimiento del Hogar y Construcción en Montevideo">
+  <meta property="og:description" content="Proveedor oficial de ANDA. Mantenimiento programado: sanitaria, electricidad, albañilería y pintura. Construcción y refacciones en Uruguay. Atención 365 días.">
   <meta property="og:image" content="https://solutum.pages.dev/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="es_UY">
+  <meta property="og:site_name" content="SOLUTUM">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SOLUTUM — Mantenimiento del Hogar y Construcción en Montevideo">
+  <meta name="twitter:description" content="Proveedor oficial de ANDA. Mantenimiento programado, construcción y refacciones en Montevideo, Uruguay.">
+  <meta name="twitter:image" content="https://solutum.pages.dev/images/og-image.png">
 
-  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "HomeAndConstructionBusiness",
     "name": "SOLUTUM S.A.",
-    "description": "Centro de Mantenimiento Programado. Proveedor oficial de ANDA en Montevideo, Uruguay.",
+    "url": "https://solutum.com.uy",
+    "logo": "https://solutum.pages.dev/images/logo/logo.webp",
+    "image": "https://solutum.pages.dev/images/og-image.png",
+    "description": "Centro de Mantenimiento Programado. Proveedor oficial de ANDA en Montevideo y área metropolitana. Servicios de sanitaria, electricidad, albañilería, pintura y construcción.",
+    "telephone": ["+59896793203", "+59899629765"],
+    "email": "info@solutum.com.uy",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Montevideo",
+      "addressRegion": "Montevideo",
       "addressCountry": "UY"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -34.9011,
+      "longitude": -56.1645
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Montevideo"
+    },
+    "foundingDate": "1997",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de mantenimiento y construcción",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mantenimiento sanitario"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mantenimiento eléctrico"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Albañilería"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pintura"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Construcción y refacciones"}}
+      ]
     }
   }
   </script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -36,26 +82,8 @@
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="nav" role="banner">
-    <div class="container nav__inner">
-      <a href="/" class="nav__logo" aria-label="SOLUTUM — Inicio">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-          <polygon points="14,2 26,24 2,24" fill="#FF5F00"/>
-          <polygon points="14,8 22,24 6,24" fill="#171717"/>
-        </svg>
-        <span>SOLUTUM</span>
-      </a>
-      <nav aria-label="Navegación principal">
-        <ul class="nav__links">
-          <li><a href="/" aria-current="page">Inicio</a></li>
-          <li><a href="/nosotros.html">Nosotros</a></li>
-          <li><a href="/servicios.html">Servicios</a></li>
-          <li><a href="/contacto.html" class="nav__cta">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- NAV — generado por nav-render.js -->
+  <header class="nav" role="banner"></header>
 
   <main id="main">
 
@@ -76,7 +104,7 @@
           <a href="/servicios.html" class="btn btn--primary btn--lg">Ver servicios</a>
           <a href="/contacto.html" class="btn btn--outline btn--lg">Contactarnos</a>
         </div>
-        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.5rem;">
+        <div class="hero__badges">
           <span class="badge badge--verde">Proveedor ANDA</span>
           <span class="badge badge--verde">28+ años</span>
           <span class="badge badge--naranja">365 días · 24 hs</span>
@@ -114,7 +142,7 @@
             <p class="stats__label">Años de trayectoria</p>
           </div>
           <div class="stats__item">
-            <span class="stats__num">ANDA</span>
+            <span class="stats__num"><span class="marca-anda">anda</span></span>
             <p class="stats__label">Proveedor oficial</p>
           </div>
           <div class="stats__item">
@@ -130,14 +158,14 @@
     </section>
 
     <!-- PROVEEDOR ANDA -->
-    <section class="reveal" aria-label="Proveedor ANDA" style="padding-block:var(--sp-20); background:var(--color-fondo-2); border-top:1px solid var(--color-borde);">
+    <section class="reveal seccion-2col" aria-label="Proveedor ANDA">
       <div class="container">
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-12); align-items:center;">
+        <div class="grid-2col">
           <div>
             <p style="font-size:var(--text-xs); font-weight:700; color:var(--color-naranja); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:var(--sp-4);">Respaldo institucional</p>
-            <h2 style="font-size:clamp(var(--text-2xl), 3.5vw, var(--text-4xl)); margin-bottom:var(--sp-6);">Proveedores de ANDA</h2>
+            <h2 style="font-size:clamp(var(--text-2xl), 3.5vw, var(--text-4xl)); margin-bottom:var(--sp-6);">Proveedores de <span class="marca-anda">anda</span></h2>
             <div style="display:flex; flex-direction:column; gap:var(--sp-4); color:var(--color-texto-2); line-height:1.8;">
-              <p>SOLUTUM S.A. es proveedor oficial de la Asociación Nacional de Afiliados (ANDA), brindando el servicio del <strong style="color:var(--color-texto);">Centro de Mantenimiento Programado</strong> a los socios de Montevideo y área metropolitana.</p>
+              <p>SOLUTUM S.A. es proveedor oficial de la Asociación Nacional de Afiliados (anda), brindando el servicio del <strong style="color:var(--color-texto);">Centro de Mantenimiento Programado</strong> a los socios de Montevideo y área metropolitana.</p>
               <p>Esta relación acredita nuestra capacidad técnica, el cumplimiento de las normativas de seguridad vigentes y el compromiso con los estándares de calidad exigidos por una institución de alcance nacional.</p>
             </div>
             <div style="margin-top:var(--sp-8); display:flex; gap:var(--sp-3); flex-wrap:wrap;">
@@ -236,9 +264,9 @@
     </section>
 
     <!-- CONSTRUCCIÓN (SECUNDARIO) -->
-    <section class="reveal" aria-labelledby="construccion-titulo" style="padding-block:var(--sp-20); background:var(--color-fondo-2); border-top:1px solid var(--color-borde);">
+    <section class="reveal seccion-2col" aria-labelledby="construccion-titulo">
       <div class="container">
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-12); align-items:center;">
+        <div class="grid-2col">
           <div style="position:relative; border-radius:var(--radius-lg); overflow:hidden;">
             <img
               src="/images/hero/hero-obra-3.webp"

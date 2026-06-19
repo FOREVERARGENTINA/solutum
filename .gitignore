@@ -2,7 +2,13 @@ node_modules/
 dist/
 .superpowers/
 .playwright-mcp/
+.claude/
 *.log
 .vite-dev.err
 .DS_Store
 Thumbs.db
+
+# Local browser/test screenshots
+/desktop-*.png
+/hero-*.png
+/mobile-*.png

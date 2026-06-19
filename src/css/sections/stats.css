@@ -43,9 +43,19 @@
     margin-top: var(--sp-1);
   }
 
+  @media (max-width: 900px) and (min-width: 601px) {
+    .stats__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .stats__item:nth-child(2)::after {
+      display: none;
+    }
+  }
+
   @media (max-width: 600px) {
     .stats__grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
     }
 
     .stats__item:not(:last-child)::after {
@@ -55,6 +65,11 @@
       top: auto;
       bottom: 0;
       height: 1px;
+    }
+
+    .stats__item:nth-child(2)::after,
+    .stats__item:nth-child(4)::after {
+      display: none;
     }
   }
 }
