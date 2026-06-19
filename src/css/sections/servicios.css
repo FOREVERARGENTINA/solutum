@@ -1,6 +1,10 @@
 .servicios {
   padding-block: var(--sp-20);
 
+  &.servicios--spaced-top {
+    padding-top: var(--sp-20);
+  }
+
   .servicios__header {
     margin-bottom: var(--sp-12);
 
@@ -63,5 +67,107 @@
       font-size: var(--text-sm);
       line-height: 1.7;
     }
+
+    .servicio-card__lista {
+      color: var(--color-texto-2);
+      font-size: var(--text-sm);
+      line-height: 1.8;
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-1);
+    }
   }
+}
+
+.anda-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-5);
+  background: var(--color-fondo-2);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radius-full);
+  padding: var(--sp-3) var(--sp-6) var(--sp-3) var(--sp-3);
+  margin-bottom: var(--sp-6);
+}
+
+.anda-chip__logo {
+  background: #fff;
+  border-radius: var(--radius-full);
+  padding: 0.35rem 0.6rem;
+  display: block;
+}
+
+.anda-chip__body {
+  text-align: left;
+}
+
+.anda-chip__kicker {
+  font-size: var(--text-xs);
+  color: var(--color-naranja);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.anda-chip__name {
+  font-size: var(--text-sm);
+  color: var(--color-texto);
+  font-weight: 600;
+  margin: 0;
+}
+
+.notice-band {
+  padding-block: var(--sp-12);
+  background: var(--color-fondo-2);
+  border-top: 1px solid var(--color-borde);
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.notice-band__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+  flex-wrap: wrap;
+}
+
+.notice-band__text {
+  color: var(--color-texto-2);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  max-width: 680px;
+}
+
+.construccion-servicios {
+  padding-block: var(--sp-20);
+}
+
+.obra-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--sp-6);
+}
+
+.obra-card {
+  background: var(--color-fondo-2);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radius-md);
+  padding: var(--sp-8);
+}
+
+.obra-card__icono {
+  margin-bottom: var(--sp-4);
+}
+
+.obra-card__titulo {
+  font-size: var(--text-xl);
+  margin-bottom: var(--sp-3);
+}
+
+.obra-card__desc {
+  color: var(--color-texto-2);
+  font-size: var(--text-sm);
+  line-height: 1.7;
 }

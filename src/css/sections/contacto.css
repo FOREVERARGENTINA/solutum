@@ -91,6 +91,10 @@
       .info__valor {
         font-size: var(--text-sm);
         color: var(--color-texto);
+
+        a {
+          color: var(--color-naranja);
+        }
       }
     }
   }

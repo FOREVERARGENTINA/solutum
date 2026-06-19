@@ -34,7 +34,7 @@ Hasta que este documento se complete explícitamente, el agente debe asumir:
 
 - **Seguridad > todo**
 - **No tocar producción**
-- **No ejecutar deploys**
+- **No ejecutar deploys sin consultar antes**
 - **No modificar datos persistentes**
 - **Ante cualquier duda → preguntar**
 - **Seguir guia.md para temas no especificados aquí**
@@ -196,12 +196,13 @@ Detuve la acción hasta recibir clarificación."
 - Crear entidades centrales del dominio
 - Instalar dependencias nuevas
 - Modificar permisos o roles
+- Ejecutar deploys o publicar cambios
 - Cualquier acción en Zonas Rojas
 - Cambiar stack tecnológico definido
 
 ### ❌ Prohibido (nunca automático)
 
-- Ejecutar deploys
+- Ejecutar deploys sin confirmación explícita
 - Tocar datos de producción
 - Eliminar datos persistentes
 - Ejecutar migraciones en DB productiva
@@ -217,17 +218,17 @@ Detuve la acción hasta recibir clarificación."
 | Capa | Tecnología | Estado | Notas |
 |------|------------|--------|-------|
 | **Tipo de Proyecto** | Tipo A avanzado | ✅ | HTML multipágina + build moderno. Sin framework frontend |
-| **Frontend** | HTML multipágina + Vite | ✅ | 4 páginas: index, nosotros, trabajos, contacto |
+| **Frontend** | HTML multipágina + Vite | ✅ | 5 páginas: index, nosotros, servicios, trabajos, contacto |
 | **Estilos** | CSS nativo moderno | ✅ | Variables, nesting, container queries, scroll-driven animations |
 | **JavaScript** | Vanilla ES Modules | ✅ | Sin jQuery, sin frameworks. Módulos con import/export |
 | **Build tool** | Vite 6 | ✅ | Multipágina via rollupOptions.input |
-| **Fuentes** | @fontsource/inter + @fontsource/space-grotesk | ✅ | Self-hosted, sin Google Fonts CDN |
-| **Lightbox** | glightbox | ✅ | Solo en trabajos.html — no en otras páginas |
+| **Fuentes** | @fontsource/inter + @fontsource/space-grotesk + @fontsource/poppins | ✅ | Self-hosted, sin Google Fonts CDN |
+| **Lightbox** | glightbox | ✅ | En trabajos.html y servicios.html |
 | **Validación** | zod cliente (Fase 1 visual) | ✅ | Fase 2 requiere server-side + rate limit + DOMPurify |
 | **Backend/API** | Ninguno en Fase 1 | ✅ | Formulario visual sin envío real |
 | **Database** | Ninguna | ✅ | Sitio estático |
 | **Auth** | Ninguna | ✅ | Sitio público |
-| **Hosting** | Cloudflare Pages | ✅ | Deploy manual — agente NO ejecuta deploys |
+| **Hosting** | Cloudflare Pages | ✅ | Deploy vía Wrangler o manual — el agente consulta antes de ejecutar |
 | **Analytics** | Ninguno definido | ⏳ | Agregar en fase posterior si se requiere |
 
 ### Dependencias Aprobadas
@@ -236,6 +237,7 @@ Detuve la acción hasta recibir clarificación."
 - `vite` (devDependency)
 - `@fontsource/inter`
 - `@fontsource/space-grotesk`
+- `@fontsource/poppins`
 - `glightbox`
 - `zod`
 
@@ -284,7 +286,7 @@ Detuve la acción hasta recibir clarificación."
 
 ```
 SOLUTUM/
-├── index.html / nosotros.html / trabajos.html / contacto.html
+├── index.html / nosotros.html / servicios.html / trabajos.html / contacto.html
 ├── vite.config.js
 ├── _headers          ← seguridad Cloudflare Pages
 ├── llms.txt / robots.txt / sitemap.xml
@@ -340,7 +342,7 @@ SOLUTUM/
 
 ## 🚀 Comandos Críticos
 
-**El agente prepara, el humano ejecuta**
+**El agente prepara y consulta antes de ejecutar deploys**
 
 ### Desarrollo
 ```bash
@@ -352,10 +354,11 @@ npm run fix:encoding     # Preview correcciones de encoding
 npm run fix:encoding:apply  # Aplicar correcciones de encoding
 ```
 
-### Deploy (SOLO humano — nunca el agente)
+### Deploy (requiere confirmación explícita)
 ```bash
-# El agente NO ejecuta deploys
-# El humano sube dist/ a Cloudflare Pages manualmente
+# El agente consulta antes de ejecutar cualquier deploy
+npm run deploy            # build + wrangler pages deploy dist --project-name=solutum
+# Alternativa: el humano sube dist/ a Cloudflare Pages manualmente
 ```
 
 ---
@@ -464,7 +467,7 @@ npm run fix:encoding:apply  # Aplicar correcciones de encoding
 
 ---
 
-**Última actualización:** 2026-06-17  
-**Versión:** v1.0 — stack definido  
+**Última actualización:** 2026-06-19  
+**Versión:** v1.1 — stack/documentación sincronizados  
 **Estado:** ✅ Stack y zonas rojas activos  
 **Próxima revisión:** al agregar backend en Fase 2

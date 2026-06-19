@@ -96,9 +96,9 @@
     }
   }
 
-  .nav__cta {
+  .nav__links a.nav__cta {
     background-color: var(--color-naranja);
-    color: var(--color-texto) !important;
+    color: var(--color-texto);
     padding: var(--sp-2) var(--sp-5);
     border-radius: var(--radius-sm);
     font-weight: 700;
@@ -402,6 +402,7 @@ textarea.form-control {
   position: relative;
   z-index: 1;
   background-color: var(--color-fondo);
+  margin-bottom: var(--footer-reveal-space, 0);
 }
 
 .footer-reveal .footer {
@@ -418,7 +419,7 @@ textarea.form-control {
     position: static;
   }
   .footer-reveal main {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
   }
 }
 

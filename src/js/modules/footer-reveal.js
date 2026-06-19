@@ -9,7 +9,7 @@ export function initFooterReveal() {
   document.documentElement.classList.add('footer-reveal')
 
   function sync() {
-    main.style.marginBottom = footer.getBoundingClientRect().height + 'px'
+    document.documentElement.style.setProperty('--footer-reveal-space', `${footer.getBoundingClientRect().height}px`)
   }
 
   window.addEventListener('load', sync)

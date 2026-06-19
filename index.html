@@ -71,9 +71,6 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -162,51 +159,51 @@
       <div class="container">
         <div class="grid-2col">
           <div>
-            <p style="font-size:var(--text-xs); font-weight:700; color:var(--color-naranja); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:var(--sp-4);">Respaldo institucional</p>
-            <h2 style="font-size:clamp(var(--text-2xl), 3.5vw, var(--text-4xl)); margin-bottom:var(--sp-6);">Proveedores de <span class="marca-anda">anda</span></h2>
-            <div style="display:flex; flex-direction:column; gap:var(--sp-4); color:var(--color-texto-2); line-height:1.8;">
-              <p>SOLUTUM S.A. es proveedor oficial de la Asociación Nacional de Afiliados (anda), brindando el servicio del <strong style="color:var(--color-texto);">Centro de Mantenimiento Programado</strong> a los socios de Montevideo y área metropolitana.</p>
+            <p class="eyebrow">Respaldo institucional</p>
+            <h2 class="section-heading">Proveedores de <span class="marca-anda">anda</span></h2>
+            <div class="copy-stack">
+              <p>SOLUTUM S.A. es proveedor oficial de la Asociación Nacional de Afiliados (anda), brindando el servicio del <strong class="text-strong">Centro de Mantenimiento Programado</strong> a los socios de Montevideo y área metropolitana.</p>
               <p>Esta relación acredita nuestra capacidad técnica, el cumplimiento de las normativas de seguridad vigentes y el compromiso con los estándares de calidad exigidos por una institución de alcance nacional.</p>
             </div>
-            <div style="margin-top:var(--sp-8); display:flex; gap:var(--sp-3); flex-wrap:wrap;">
+            <div class="badge-row">
               <span class="badge badge--verde">Dec. N°406/88</span>
               <span class="badge badge--verde">Dec. N°125/014</span>
               <span class="badge badge--naranja">Técnico prevencionista</span>
             </div>
           </div>
-          <div style="background:var(--color-fondo); border:1px solid var(--color-borde); border-radius:var(--radius-lg); padding:var(--sp-10); display:flex; flex-direction:column; gap:var(--sp-6);">
-            <div style="display:flex; align-items:center; gap:var(--sp-4); padding-bottom:var(--sp-6); border-bottom:1px solid var(--color-borde);">
-              <img src="/images/logo/Logo-ANDA.webp" alt="ANDA — Asociación Nacional de Afiliados" width="120" height="auto" style="background:#fff; border-radius:var(--radius-sm); padding:0.5rem 0.75rem;">
+          <div class="anda-card">
+            <div class="anda-card__header">
+              <img class="anda-card__logo" src="/images/logo/Logo-ANDA.webp" alt="ANDA — Asociación Nacional de Afiliados" width="120" height="auto">
               <div>
-                <p style="font-size:var(--text-xs); color:var(--color-texto-2); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--sp-1);">Proveedor oficial</p>
-                <p style="font-weight:600; font-size:var(--text-sm);">Asociación Nacional de Afiliados</p>
+                <p class="anda-card__kicker">Proveedor oficial</p>
+                <p class="anda-card__name">Asociación Nacional de Afiliados</p>
               </div>
             </div>
-            <div style="display:flex; align-items:flex-start; gap:var(--sp-4);">
-              <div style="width:44px; height:44px; flex-shrink:0; background:rgba(2,143,70,0.12); border-radius:var(--radius-full); display:flex; align-items:center; justify-content:center;">
+            <div class="anda-card__item">
+              <div class="feature-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#028F46" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </div>
               <div>
-                <p style="font-weight:600; margin-bottom:var(--sp-1);">Habilitación legal vigente</p>
-                <p style="font-size:var(--text-sm); color:var(--color-texto-2); line-height:1.6;">Cumplimiento de todos los requisitos legales y compromisos normativos para la prestación del servicio.</p>
+                <p class="feature-title">Habilitación legal vigente</p>
+                <p class="feature-text">Cumplimiento de todos los requisitos legales y compromisos normativos para la prestación del servicio.</p>
               </div>
             </div>
-            <div style="display:flex; align-items:flex-start; gap:var(--sp-4);">
-              <div style="width:44px; height:44px; flex-shrink:0; background:rgba(2,143,70,0.12); border-radius:var(--radius-full); display:flex; align-items:center; justify-content:center;">
+            <div class="anda-card__item">
+              <div class="feature-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#028F46" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
               </div>
               <div>
-                <p style="font-weight:600; margin-bottom:var(--sp-1);">Personal propio en planilla</p>
-                <p style="font-size:var(--text-sm); color:var(--color-texto-2); line-height:1.6;">Salarios, traslados y herramientas a cargo exclusivo de SOLUTUM. El cliente solo gestiona los materiales.</p>
+                <p class="feature-title">Personal propio en planilla</p>
+                <p class="feature-text">Salarios, traslados y herramientas a cargo exclusivo de SOLUTUM. El cliente solo gestiona los materiales.</p>
               </div>
             </div>
-            <div style="display:flex; align-items:flex-start; gap:var(--sp-4);">
-              <div style="width:44px; height:44px; flex-shrink:0; background:rgba(2,143,70,0.12); border-radius:var(--radius-full); display:flex; align-items:center; justify-content:center;">
+            <div class="anda-card__item">
+              <div class="feature-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#028F46" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
               <div>
-                <p style="font-weight:600; margin-bottom:var(--sp-1);">Cobertura 365 días · 24 hs</p>
-                <p style="font-size:var(--text-sm); color:var(--color-texto-2); line-height:1.6;">Servicio disponible todo el año, con atención previa agenda para cada solicitud.</p>
+                <p class="feature-title">Cobertura 365 días · 24 hs</p>
+                <p class="feature-text">Servicio disponible todo el año, con atención previa agenda para cada solicitud.</p>
               </div>
             </div>
           </div>
@@ -257,7 +254,7 @@
           </article>
 
         </div>
-        <div style="text-align:center; margin-top:var(--sp-10);">
+        <div class="section-action">
           <a href="/servicios.html" class="btn btn--outline btn--lg">Ver detalle de servicios</a>
         </div>
       </div>
@@ -267,22 +264,22 @@
     <section class="reveal seccion-2col" aria-labelledby="construccion-titulo">
       <div class="container">
         <div class="grid-2col">
-          <div style="position:relative; border-radius:var(--radius-lg); overflow:hidden;">
+          <div class="media-frame">
             <img
               src="/images/hero/hero-obra-3.webp"
               alt="Obras de construcción y refacción SOLUTUM en Montevideo"
               loading="lazy"
               width="600"
               height="500"
-              style="width:100%; height:auto; display:block;"
+              class="media-frame__img"
             >
-            <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(16,16,16,0.42) 0%, transparent 50%);"></div>
+            <div class="media-frame__overlay"></div>
           </div>
           <div>
-            <p style="font-size:var(--text-xs); font-weight:700; color:var(--color-naranja); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:var(--sp-4);">También somos</p>
-            <h2 id="construccion-titulo" style="font-size:clamp(var(--text-2xl), 3.5vw, var(--text-4xl)); margin-bottom:var(--sp-6);">Empresa constructora</h2>
-            <p style="color:var(--color-texto-2); line-height:1.8; margin-bottom:var(--sp-6);">Con más de 28 años de trayectoria, SOLUTUM ejecuta obras residenciales, comerciales, ampliaciones y refacciones en todo Uruguay. La misma exigencia técnica del Centro de Mantenimiento aplicada a proyectos de mayor escala.</p>
-            <div style="display:flex; gap:var(--sp-3); flex-wrap:wrap; margin-bottom:var(--sp-8);">
+            <p class="eyebrow">También somos</p>
+            <h2 id="construccion-titulo" class="section-heading">Empresa constructora</h2>
+            <p class="section-copy section-copy--spaced">Con más de 28 años de trayectoria, SOLUTUM ejecuta obras residenciales, comerciales, ampliaciones y refacciones en todo Uruguay. La misma exigencia técnica del Centro de Mantenimiento aplicada a proyectos de mayor escala.</p>
+            <div class="badge-row badge-row--compact">
               <span class="badge badge--verde">Residencial</span>
               <span class="badge badge--verde">Comercial</span>
               <span class="badge badge--naranja">Ampliaciones · Refacciones</span>

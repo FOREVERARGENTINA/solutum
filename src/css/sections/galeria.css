@@ -1,12 +1,20 @@
 .galeria {
   padding-block: var(--sp-20);
 
+  &.galeria--flush-top {
+    padding-top: 0;
+  }
+
   .galeria__header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     gap: var(--sp-6);
     margin-bottom: var(--sp-10);
+
+    &.galeria__header--compact {
+      margin-bottom: var(--sp-8);
+    }
 
     .galeria__eyebrow {
       font-size: var(--text-xs);
