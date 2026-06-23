@@ -18,22 +18,26 @@ if (typeof requestIdleCallback !== 'undefined') {
 // ── Por página — detecta dónde estamos y carga solo lo necesario ──────────
 const path = window.location.pathname
 
-if (path === '/' || path === '/index.html') {
-  const { initContador } = await import('./modules/contador.js')
-  const { initHeroCarrusel } = await import('./modules/hero-carrusel.js')
-  initContador()
-  initHeroCarrusel()
+async function initPageModules() {
+  if (path === '/' || path === '/index.html') {
+    const { initContador } = await import('./modules/contador.js')
+    const { initHeroCarrusel } = await import('./modules/hero-carrusel.js')
+    initContador()
+    initHeroCarrusel()
+  }
+
+  if (path === '/servicios.html' || path === '/trabajos.html') {
+    const { default: GLightbox } = await import('glightbox')
+    await import('glightbox/dist/css/glightbox.min.css')
+    const { initGaleriaFiltro } = await import('./modules/galeria-filtro.js')
+    initGaleriaFiltro()
+    GLightbox({ selector: '.glightbox' })
+  }
+
+  if (path === '/contacto.html') {
+    const { initForms } = await import('./modules/forms.js')
+    initForms()
+  }
 }
 
-if (path === '/servicios.html' || path === '/trabajos.html') {
-  const { default: GLightbox } = await import('glightbox')
-  await import('glightbox/dist/css/glightbox.min.css')
-  const { initGaleriaFiltro } = await import('./modules/galeria-filtro.js')
-  initGaleriaFiltro()
-  GLightbox({ selector: '.glightbox' })
-}
-
-if (path === '/contacto.html') {
-  const { initForms } = await import('./modules/forms.js')
-  initForms()
-}
+initPageModules()
