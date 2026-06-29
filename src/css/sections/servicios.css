@@ -6,13 +6,10 @@
   }
 
   .servicios__header {
-    display: flex;
-    align-items: center;
-    gap: var(--sp-8);
     margin-bottom: var(--sp-12);
 
     .servicios__header-text {
-      flex: 0 0 60%;
+      min-width: 0;
     }
 
     .servicios__eyebrow {
@@ -35,9 +32,19 @@
     }
   }
 
+  .servicios__header--con-chip {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-8);
+
+    .servicios__header-text {
+      flex: 1 1 60%;
+    }
+  }
+
   .servicios__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
     gap: var(--sp-6);
   }
 
@@ -96,7 +103,8 @@
   border: 1px solid var(--color-borde);
   border-radius: var(--radius-full);
   padding: var(--sp-3) var(--sp-6) var(--sp-3) var(--sp-3);
-  flex-shrink: 0;
+  flex: 0 1 auto;
+  max-width: 100%;
 }
 
 .anda-chip__logo {
@@ -107,6 +115,7 @@
 }
 
 .anda-chip__body {
+  min-width: 0;
   text-align: left;
 }
 
@@ -153,8 +162,33 @@
 
 .obra-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
   gap: var(--sp-6);
+}
+
+@media (max-width: 900px) {
+  .servicios .servicios__header--con-chip {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--sp-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .anda-chip {
+    width: 100%;
+    gap: var(--sp-3);
+    padding-right: var(--sp-4);
+  }
+
+  .anda-chip__logo {
+    flex: 0 0 auto;
+    width: 64px;
+  }
+
+  .anda-chip__name {
+    overflow-wrap: anywhere;
+  }
 }
 
 /* ponytail: 4 cards -> 4 en fila a ancho completo en desktop */

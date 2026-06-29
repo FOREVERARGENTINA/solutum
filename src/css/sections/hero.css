@@ -20,6 +20,7 @@
     gap: var(--sp-6);
     position: relative;
     z-index: 2;
+    min-width: 0;
   }
 
   /* ── Entrada escalonada ── */
@@ -58,6 +59,7 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     width: fit-content;
+    max-width: 100%;
   }
 
   .hero__titulo {
@@ -129,6 +131,7 @@
   .hero__imagen {
     position: relative;
     overflow: hidden;
+    min-width: 0;
 
     &::before {
       content: '';
@@ -242,6 +245,17 @@
       bottom: var(--sp-3);
       left: 50%;
       transform: translateX(-50%);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .hero__acciones {
+    align-items: stretch;
+    flex-direction: column;
+
+    .btn--lg {
+      width: 100%;
     }
   }
 }

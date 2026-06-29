@@ -525,12 +525,15 @@ textarea.form-control {
 
     li { display: flex; align-items: flex-start; gap: var(--sp-2); }
 
+    li > * { min-width: 0; }
+
     a, span {
       color: rgba(184, 184, 184, 0.78);
       font-size: var(--text-sm);
       line-height: 1.6;
       transition: color var(--transition-fast), padding-left var(--transition-fast);
       display: inline-block;
+      overflow-wrap: anywhere;
     }
 
     a:hover {
@@ -698,8 +701,18 @@ textarea.form-control {
   }
 
   .floating-action {
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .floating-action svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .floating-action--whatsapp svg {
+    width: 25px;
+    height: 28px;
   }
 }
 

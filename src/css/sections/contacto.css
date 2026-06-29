@@ -8,6 +8,12 @@
     align-items: start;
   }
 
+  .contacto__grid > *,
+  .form-row > *,
+  .info__item > * {
+    min-width: 0;
+  }
+
   .contacto__form-titulo {
     font-size: var(--text-2xl);
     margin-bottom: var(--sp-8);
@@ -91,6 +97,7 @@
       .info__valor {
         font-size: var(--text-sm);
         color: var(--color-texto);
+        overflow-wrap: anywhere;
 
         a {
           color: var(--color-naranja);

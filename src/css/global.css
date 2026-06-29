@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden; /* ponytail: corta scroll horizontal del reveal scroll-driven en móvil */
 }
 
 body {
@@ -142,6 +143,12 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 1fr 1fr;
   gap: var(--sp-12);
   align-items: center;
+}
+
+.grid-2col > *,
+.anda-card__header > *,
+.anda-card__item > * {
+  min-width: 0;
 }
 
 .eyebrow {
@@ -318,7 +325,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .valores__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: var(--sp-6);
 }
 
