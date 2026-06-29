@@ -157,9 +157,9 @@
   gap: var(--sp-6);
 }
 
-/* ponytail: 5 cards -> 5 en fila en desktop ancho para evitar el huérfano 4+1 */
+/* ponytail: 4 cards -> 4 en fila a ancho completo en desktop */
 @media (min-width: 1100px) {
-  .obra-grid { grid-template-columns: repeat(5, 1fr); }
+  .obra-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
 .obra-card {
