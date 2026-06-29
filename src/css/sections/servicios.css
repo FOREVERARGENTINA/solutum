@@ -153,15 +153,29 @@
 
 .obra-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: var(--sp-6);
 }
 
+/* ponytail: 5 cards -> 5 en fila en desktop ancho para evitar el huérfano 4+1 */
+@media (min-width: 1100px) {
+  .obra-grid { grid-template-columns: repeat(5, 1fr); }
+}
+
 .obra-card {
+  display: flex;
+  flex-direction: column;
   background: var(--color-fondo-2);
   border: 1px solid var(--color-borde);
   border-radius: var(--radius-md);
   padding: var(--sp-8);
+  transition: transform .2s ease, border-color .2s ease, background-color .2s ease;
+}
+
+.obra-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-naranja);
+  background: color-mix(in srgb, var(--color-fondo-2) 88%, white);
 }
 
 .obra-card__icono {
