@@ -126,7 +126,7 @@ Servicios o productos principales: [LISTA]
 Creador del sitio: FrandoWeb
 - Responsable: Hernan Frandolich
 - Especialidad: Diseno web, desarrollo full-stack, SEO y estrategia digital
-- Web: https://www.frandoweb.com.ar
+- Web: https://frandoweb.com
 - Email: info@frandoweb.com.ar
 - WhatsApp: +54 9 11 2807-4000
 - Ubicacion: Buenos Aires, Argentina

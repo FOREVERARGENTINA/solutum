@@ -74,7 +74,7 @@ export function renderFooter() {
       </div>
       <div class="footer__bottom">
         <span>&copy; 2026 SOLUTUM S.A. Todos los derechos reservados.</span>
-        <span>Sitio web por <a href="https://www.frandoweb.com.ar" target="_blank" rel="noopener">FrandoWeb</a></span>
+        <span>Sitio web por <a href="https://frandoweb.com" target="_blank" rel="noopener">FrandoWeb</a></span>
       </div>
     </div>
   `

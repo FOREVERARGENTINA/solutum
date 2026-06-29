@@ -36,7 +36,7 @@ Informacion comercial:
 
 ## Creator
 
-- [FrandoWeb](https://www.frandoweb.com.ar): Diseno web, desarrollo full-stack, SEO y estrategia digital.
+- [FrandoWeb](https://frandoweb.com): Diseno web, desarrollo full-stack, SEO y estrategia digital.
 - [Email de FrandoWeb](mailto:info@frandoweb.com.ar): Contacto del responsable del sitio.
 - [WhatsApp de FrandoWeb](https://wa.me/5491128074000): Contacto por WhatsApp del responsable del sitio.
 
