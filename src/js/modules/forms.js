@@ -24,7 +24,7 @@ export function initForms() {
   const form = document.getElementById('form-contacto')
   if (!form) return
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault()
     limpiarErrores()
 
@@ -46,9 +46,23 @@ export function initForms() {
       return
     }
 
-    // Fase 1: sin envío real — mostrar confirmación visual
-    form.hidden = true
-    const confirmacion = document.getElementById('form-confirmacion')
-    if (confirmacion) confirmacion.hidden = false
+    const boton = form.querySelector('button[type="submit"]')
+    boton.disabled = true
+
+    try {
+      const resp = await fetch('/api/contacto', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(datos),
+      })
+      if (!resp.ok) throw new Error('Error al enviar')
+
+      form.hidden = true
+      const confirmacion = document.getElementById('form-confirmacion')
+      if (confirmacion) confirmacion.hidden = false
+    } catch {
+      mostrarError('mensaje', 'No se pudo enviar la consulta. Intentá de nuevo o escribinos por WhatsApp.')
+      boton.disabled = false
+    }
   })
 }

@@ -70,38 +70,49 @@
     span { color: var(--color-naranja); }
   }
 
-  /* ── Frase rotativa ── */
   .hero__rotativa {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: var(--sp-3);
+    padding: var(--sp-2) var(--sp-4);
+    border-radius: var(--radius-full);
+    background: rgba(107, 194, 139, 0.06);
+    border: 1px solid rgba(107, 194, 139, 0.12);
+    width: fit-content;
     font-size: var(--text-sm);
-    color: var(--color-texto-2);
+    color: var(--color-verde-claro);
     min-height: 1.5em;
 
     &::before {
       content: '';
       display: inline-block;
-      width: 6px;
-      height: 6px;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
-      background: var(--color-naranja);
+      background: var(--color-verde-claro);
       flex-shrink: 0;
+      animation: hero-pulso 2s ease-in-out infinite;
     }
+  }
+
+  @keyframes hero-pulso {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.35; transform: scale(0.8); }
   }
 
   .hero__rotativa-texto {
     display: inline-block;
-    transition: opacity 0.35s ease, transform 0.35s ease;
+    font-weight: 600;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 
     &.saliendo {
       opacity: 0;
-      transform: translateY(-8px);
+      transform: scale(0.92) translateY(-3px);
     }
 
     &.entrando {
       opacity: 0;
-      transform: translateY(8px);
+      transform: scale(0.92) translateY(3px);
     }
   }
 

@@ -98,11 +98,12 @@
 .anda-chip {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--sp-5);
   background: var(--color-fondo-2);
   border: 1px solid var(--color-borde);
   border-radius: var(--radius-full);
-  padding: var(--sp-3) var(--sp-6) var(--sp-3) var(--sp-3);
+  padding: var(--sp-3) var(--sp-6);
   flex: 0 1 auto;
   max-width: 100%;
 }
@@ -116,7 +117,7 @@
 
 .anda-chip__body {
   min-width: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .anda-chip__kicker {
@@ -178,7 +179,6 @@
   .anda-chip {
     width: 100%;
     gap: var(--sp-3);
-    padding-right: var(--sp-4);
   }
 
   .anda-chip__logo {

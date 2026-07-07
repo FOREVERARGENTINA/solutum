@@ -33,7 +33,7 @@ export function initHeroCarrusel() {
       textoEl.classList.remove('saliendo')
       textoEl.classList.add('entrando')
       requestAnimationFrame(() => requestAnimationFrame(() => textoEl.classList.remove('entrando')))
-    }, 350)
+    }, 200)
   }
 
   // ── Progreso (barras) ──────────────────────────────────────────────────

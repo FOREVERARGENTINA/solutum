@@ -2,9 +2,9 @@
 
 > Empresa uruguaya de mantenimiento programado del hogar y construccion en Montevideo.
 
-SOLUTUM S.A. es una empresa de Montevideo fundada en 1997. Es proveedor oficial de ANDA para servicios de mantenimiento programado del hogar en Montevideo y area metropolitana, y tambien ejecuta obras de construccion, ampliaciones y refacciones residenciales y comerciales.
+SOLUTUM S.A. es una empresa de Montevideo fundada en 1997. Brinda el servicio de mantenimiento programado del hogar como beneficio para socios en Montevideo y area metropolitana, y tambien ejecuta obras de construccion, ampliaciones y refacciones residenciales y comerciales.
 
-El sitio presenta la trayectoria de la empresa, sus servicios, trabajos realizados y canales de contacto para propietarios, socios de ANDA, empresas, arquitectos, administradores y desarrolladores que buscan mantenimiento del hogar o una constructora confiable en Uruguay.
+El sitio presenta la trayectoria de la empresa, sus servicios, trabajos realizados y canales de contacto para propietarios, socios, empresas, arquitectos, administradores y desarrolladores que buscan mantenimiento del hogar o una constructora confiable en Uruguay.
 
 Servicios principales:
 - Mantenimiento sanitario: limpieza de graseras, cambio de colillas, ajustes de canillas y desague de azotea.
@@ -20,7 +20,7 @@ Informacion comercial:
 
 ## Key Pages
 
-- [Inicio](https://solutum.com.uy/): Presentacion de SOLUTUM, respaldo ANDA, servicios principales y trayectoria.
+- [Inicio](https://solutum.com.uy/): Presentacion de SOLUTUM, respaldo institucional, servicios principales y trayectoria.
 - [Quienes somos](https://solutum.com.uy/nosotros.html): Historia, valores y contexto institucional de la empresa.
 - [Servicios](https://solutum.com.uy/servicios.html): Mantenimiento programado, construccion, ampliaciones, refacciones y galeria vinculada.
 - [Trabajos realizados](https://solutum.com.uy/trabajos.html): Galeria de obras por categoria.
