@@ -20,7 +20,7 @@ Informacion comercial:
 
 ## Key Pages
 
-- [Inicio](https://solutum.com.uy/): Presentacion de SOLUTUM, respaldo institucional, servicios principales y trayectoria.
+- [Inicio](https://solutum.com.uy/): Presentacion de SOLUTUM, acuerdo institucional, servicios principales y trayectoria.
 - [Quienes somos](https://solutum.com.uy/nosotros.html): Historia, valores y contexto institucional de la empresa.
 - [Servicios](https://solutum.com.uy/servicios.html): Mantenimiento programado, construccion, ampliaciones, refacciones y galeria vinculada.
 - [Trabajos realizados](https://solutum.com.uy/trabajos.html): Galeria de obras por categoria.
