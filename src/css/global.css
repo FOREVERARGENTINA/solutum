@@ -117,15 +117,6 @@ h1, h2, h3, h4, h5, h6 {
   span { color: var(--color-verde-claro); }
 }
 
-/* Marca ANDA en texto corrido */
-.marca-anda {
-  font-family: var(--font-anda);
-  font-weight: 600;
-  color: var(--color-anda);
-  text-transform: lowercase;
-  font-style: normal;
-}
-
 /* Layout helpers — secciones de 2 columnas */
 .seccion-2col {
   padding-block: var(--sp-20);
